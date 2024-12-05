@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  /* Logo Container */
+  .logo-container {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  
+  .logo-container img {
+    width: 70px;
+    height: auto;
+  }
+  
+  /* Navbar */
+  .navbar ul {
+    list-style-type: none;
+    background-color: #59331D;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar li {
+    display: inline-block;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: #402515;
+  }
+  /* Product Section */
+  .product-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .section-heading {
+    margin-bottom: 2rem;
+  }
+  
+  .section-logo {
+    width: 50px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .section-heading h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .product-box {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: calc(100% - 4rem);
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .product-box h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #082B59;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  .product-description {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #082B59;
+    line-height: 1.6;
+  }
+  /* Footer Section */
+  .footer-section {
+    color: #082B59;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9rem;
+    padding: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+    }
+  
+    .about-text-box {
+      max-width: 90%;
+    }
+  
+    .product-container {
+      gap: 1rem;
+    }
+  
+    .product-box {
+      width: calc(100% - 2rem);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .navbar a {
+      padding: 10px;
+      font-size: 0.9rem;
+    }
+  
+    .product-box {
+      width: 100%;
+    }
+  }
